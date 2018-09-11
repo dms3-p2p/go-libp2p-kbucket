@@ -7,9 +7,9 @@ import (
 	"sync"
 	"time"
 
-	logging "github.com/ipfs/go-log"
-	peer "github.com/libp2p/go-libp2p-peer"
-	pstore "github.com/libp2p/go-libp2p-peerstore"
+	logging "github.com/dms3-fs/go-log"
+	peer "github.com/dms3-p2p/go-p2p-peer"
+	pstore "github.com/dms3-p2p/go-p2p-peerstore"
 )
 
 var log = logging.Logger("table")

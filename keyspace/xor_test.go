@@ -5,7 +5,7 @@ import (
 	"math/big"
 	"testing"
 
-	u "github.com/ipfs/go-ipfs-util"
+	u "github.com/dms3-fs/go-fs-util"
 )
 
 func TestPrefixLen(t *testing.T) {

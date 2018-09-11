@@ -5,16 +5,16 @@ import (
 	"crypto/sha256"
 	"errors"
 
-	u "github.com/ipfs/go-ipfs-util"
-	ks "github.com/libp2p/go-libp2p-kbucket/keyspace"
-	peer "github.com/libp2p/go-libp2p-peer"
+	u "github.com/dms3-fs/go-fs-util"
+	ks "github.com/dms3-p2p/go-p2p-kbucket/keyspace"
+	peer "github.com/dms3-p2p/go-p2p-peer"
 )
 
 // Returned if a routing table query returns no results. This is NOT expected
 // behaviour
 var ErrLookupFailure = errors.New("failed to find any peer in table")
 
-// ID for IpfsDHT is in the XORKeySpace
+// ID for Dms3FsDHT is in the XORKeySpace
 //
 // The type dht.ID signifies that its contents have been hashed from either a
 // peer.ID or a util.Key. This unifies the keyspace
